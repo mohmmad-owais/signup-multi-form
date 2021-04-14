@@ -34,15 +34,16 @@ const details: React.FC<Props> = ({ submit ,setFormValues,prevValue }) => {
       >
         <Form>
           <label htmlFor="firstName">First Name</label>
-          <Field id="firstName" name="firstName" placeholder="John" />
+          <Field id="firstName" required name="firstName" placeholder="John" />
 
           <label htmlFor="lastName">Last Name</label>
-          <Field id="lastName" name="lastName" placeholder="Doe" />
+          <Field id="lastName" required name="lastName" placeholder="Doe" />
 
           <label htmlFor="email">Email</label>
           <Field
             id="email"
             name="email"
+            required
             placeholder="john@acme.com"
             type="email"
           />

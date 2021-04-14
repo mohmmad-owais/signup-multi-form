@@ -33,10 +33,10 @@ const address: React.FC<Props> = ({ submit , setFormValues,prevValue }) => {
       >
         <Form>
           <label htmlFor="address">Permanent Address</label>
-          <Field id="address" name="address" placeholder="House # xyz" />
+          <Field id="address" required name="address" placeholder="House # xyz" />
 
           <label htmlFor="postal">Postal Address</label>
-          <Field id="postal" name="postal" placeholder="232XXX22" />
+          <Field id="postal" required name="postal" placeholder="232XXX22" />
 
           <button onClick={()=> submit(0)}>Back</button>
           <button type="submit">Submit</button>
